@@ -125,12 +125,11 @@ while True:
         print("Payment accepted!")
         print()
         time.sleep(1.5)
-        print("Thank you for your purchase!")
-        print()
-        time.sleep(1.5)
         print(f"Your change is £{change:.2f}")
         print()
+        time.sleep(1.5)
+        print("Thank you for your purchase!")
+        print()
         paid = True
+        time.sleep(1.25)
         break
-
-#test
