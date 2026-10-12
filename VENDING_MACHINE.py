@@ -23,7 +23,7 @@ print("Press 'D' for Bottled Water")
 
 print()
 
-while (not valid_letter):
+while (not valid_letter):            # Takes in the users choice of what item they want to buy, sets the variables 'item' and 'price' to the values of a item depending on the letter a user inputs
     letter = input("Please input letter: ").strip().upper()
     print()
 
@@ -49,16 +49,16 @@ while (not valid_letter):
 
     else:
         time.sleep(1)
-        print("That is not a valid letter, please try again!")
+        print("That is not a valid letter, please try again!")    
         print()
-        valid_letter = False
+        valid_letter = False        # will loop the code from line 26 if the user inputs a invalid letter allowing them to chose the right item
 
 
 coins = []
 VALID_COINS = [0.10, 0.20, 0.50, 1.00]
 
 while True:
-    while (not paid):
+    while (not paid):            # Takes in the users coins, adds them up and keeps a total as well as only accepting the valid coins (10p, 20p, 50p and £1)    
         time.sleep(1)
         coin_input = input("Input Coins, press 'Enter' when done: £")
         print()
@@ -74,12 +74,12 @@ while True:
         else:
             time.sleep(1.5)
             print()
-            print("Coins not accepted, Please input only 10p, 20p, 50p and £1 coins")
+            print("Coins not accepted, Please input only 10p, 20p, 50p and £1 coins")     # will loop the code from the start of line 61 if a user inputs a invalid coin   
             print()
 
     total = sum(coins)
 
-    if total == price:
+    if total == price:           # accepts the payment and outputs the item if the user has entered total of coins equal to the item they chose 
         print("Authorising....")
         print()
         time.sleep(1)
@@ -97,7 +97,7 @@ while True:
         paid = True
         break
 
-    elif total < price:
+    elif total < price:            # loops the code to input coins if the user has put in less than total needed to buy their chosen item
         print("Authorising....")
         print()
         time.sleep(1)
@@ -111,7 +111,7 @@ while True:
         print()
         paid = False
 
-    elif total > price:
+    elif total > price:              # calculates change if the user has input more coins then needed for their chosen item, also outputs the chosen item and change
         change = total - price
         print("Authorising....")
         print()
@@ -133,3 +133,5 @@ while True:
         paid = True
         time.sleep(1.25)
         break
+
+print()
