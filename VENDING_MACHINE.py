@@ -60,12 +60,12 @@ VALID_COINS = [0.10, 0.20, 0.50, 1.00]
 while True:
     while (not paid):
         time.sleep(1)
-        user_input = input("Input Coins, press 'Enter' when done: £")
+        coin_input = input("Input Coins, press 'Enter' when done: £")
         print()
 
-        if user_input == "":
+        if coin_input == "":
             break
-        coin = float(user_input)
+        coin = float(coin_input)
 
         if coin in VALID_COINS:
             coins.append(coin)
@@ -92,7 +92,7 @@ while True:
         print("Payment accepted!")
         print()
         time.sleep(1.5)
-        print("Thank you for your purchase!")
+        print(f"Here is your {item}, Thank you for your purchase!")
         print()
         paid = True
         break
@@ -124,11 +124,11 @@ while True:
         time.sleep(3)
         print("Payment accepted!")
         print()
-        time.sleep(1.5)
+        time.sleep(1.25)
         print(f"Your change is £{change:.2f}")
         print()
         time.sleep(1.5)
-        print("Thank you for your purchase!")
+        print(f"Here is your {item}, Thank you for your purchase!")
         print()
         paid = True
         time.sleep(1.25)
