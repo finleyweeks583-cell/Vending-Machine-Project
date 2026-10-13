@@ -65,7 +65,7 @@ while (not valid_letter):            # Takes in the users choice of what item th
         time.sleep(1)
         print("That is not a valid letter, please try again!")    
         print()
-        valid_letter = False        # will loop the code from line 26 if the user inputs a invalid letter allowing them to chose the right item
+        valid_letter = False        # will loop the code if the user inputs a invalid letter allowing them to chose the right item
 
 
 coins = []
@@ -88,7 +88,7 @@ while True:
         else:
             time.sleep(1.5)
             print()
-            print("Coins not accepted, Please input only 10p, 20p, 50p and £1 coins")     # will loop the code from the start of line 61 if a user inputs a invalid coin   
+            print("Coins not accepted, Please input only 10p, 20p, 50p and £1 coins")     # will loop the code if a user inputs a invalid coin   
             print()
 
     total = sum(coins)
