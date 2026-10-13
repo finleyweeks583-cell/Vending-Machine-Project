@@ -7,21 +7,35 @@ CRISPS = 0.60
 CHOCOLATE_BAR = 0.80
 BOTTLED_WATER = 0.90
 
+time.sleep(0.20)
 print("=========   Options   =========")
+time.sleep(0.20)
 print("Cereal Bar     :        £0.50  ")
+time.sleep(0.20)
 print("Crisps         :        £0.60  ")
+time.sleep(0.20)
 print("Chocolate Bar  :        £0.80  ")
+time.sleep(0.20)
 print("Bottled Water  :        £0.90  ")
+time.sleep(0.20)
 print("===============================")
+
+time.sleep(0.20)
 
 print()
 
+time.sleep(0.15)
 print("Press 'A' for Cereal Bar   ")
+time.sleep(0.15)
 print("Press 'B' for Crisps       ")
+time.sleep(0.15)
 print("Press 'C' for Chocolate Bar")
+time.sleep(0.15)
 print("Press 'D' for Bottled Water")
 
 print()
+
+time.sleep(1)
 
 while (not valid_letter):            # Takes in the users choice of what item they want to buy, sets the variables 'item' and 'price' to the values of a item depending on the letter a user inputs
     letter = input("Please input letter: ").strip().upper()
@@ -133,5 +147,3 @@ while True:
         paid = True
         time.sleep(1.25)
         break
-
-print()
