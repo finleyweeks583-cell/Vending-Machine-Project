@@ -121,7 +121,7 @@ while True:
         print("Authorising..")
         print()
         time.sleep(3)
-        print("Insufficent funds, please try again")
+        print("Insufficient funds, please try again")
         print()
         paid = False
 
