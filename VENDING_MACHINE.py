@@ -106,7 +106,7 @@ while True:
         print("Payment accepted!")
         print()
         time.sleep(1.5)
-        print(f"Here are your {item}, Thank you for your purchase!")
+        print(f"Here is your {item}, Thank you for your purchase!")
         print()
         paid = True
         break
